@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Text.Json.Serialization;
+using System.Threading.Tasks;
+
+namespace Application.DTO.Product
+{
+    public class AddProductInBox
+    {
+        [JsonPropertyName("storageCode")]
+        public string StorageCode { get; set; } = string.Empty;
+        [JsonPropertyName("productCode")]
+        public string ProductCode { get; set; } = string.Empty;
+    }
+}
